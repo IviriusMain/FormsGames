@@ -216,7 +216,7 @@ namespace FormsGames
 
         private void button2_Click(object sender, EventArgs e)
         {
-            _ = new Home();
+            _ = new Home().Show();
             Close();
         }
     }
