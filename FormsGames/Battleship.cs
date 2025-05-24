@@ -33,7 +33,7 @@
                 // Check if blue has won (otherwise, red won as there's no tie in this game)
                 bool blueWon = redButtonsWithBoats.All(clickedButtons.Contains);
                 clickedButtons.Clear();
-                
+
                 // Restore all buttons
                 foreach (Button btn in panel1.Controls)
                 {
@@ -183,6 +183,12 @@
                 }
                 (isRed ? redButtonsWithBoats : blueButtonsWithBoats).Add((Button)(isRed ? panel1 : panel2).Controls[f]);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Home().Show();
+            Close();
         }
     }
 }

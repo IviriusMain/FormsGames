@@ -53,6 +53,7 @@
             panel3 = new Panel();
             panel4 = new Panel();
             button1 = new Button();
+            button2 = new Button();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             SuspendLayout();
@@ -316,6 +317,7 @@
             // panel4
             // 
             panel4.BackColor = Color.Black;
+            panel4.Controls.Add(button2);
             panel4.Controls.Add(button1);
             panel4.Location = new Point(0, 435);
             panel4.Name = "panel4";
@@ -331,6 +333,16 @@
             button1.Text = "Restart";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(586, 15);
+            button2.Name = "button2";
+            button2.Size = new Size(160, 23);
+            button2.TabIndex = 1;
+            button2.Text = "<--- Back to Home Page";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Battleship
             // 
@@ -391,5 +403,6 @@
         private Panel panel3;
         private Panel panel4;
         private Button button1;
+        private Button button2;
     }
 }
